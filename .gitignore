@@ -1,0 +1,40 @@
+# Node modules
+node_modules
+
+# Dependency directories
+/react-app/node_modules/
+/server/node_modules/
+
+# Built files
+/build/
+/dist/
+
+# Logs
+*.log
+
+# Environment variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Compiled output
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Development files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+debug.log
+
+# IDE files
+.idea/
+.vscode/
+
+# macOS files
+.DS_Store

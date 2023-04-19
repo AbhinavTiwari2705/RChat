@@ -1,0 +1,252 @@
+body {
+  background: #000000;
+  font-family: monospace;
+  color: #fff;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.joinChatContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 20px;
+  
+}
+
+.joinChatContainer h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #00ff00;
+}
+
+.joinChatContainer input {
+  background: #3a3a3a;
+  color: #fff;
+  border: none;
+  padding: 5px;
+  margin: 0 5px;
+  font-size: 1rem;
+}
+
+.joinChatContainer input:focus {
+  outline: none;
+}
+
+.joinChatContainer button {
+  background: #00ff00;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 0 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.joinChatContainer button:hover {
+  background: #28a745;
+}
+
+.chat-window {
+  width: 500px;
+  height: 400px;
+  background: #2220202c;
+  border: 1px solid #ffffff;
+  padding: 10px;
+  
+}
+
+.chat-window p {
+  margin: 0;
+  line-height: 1.2rem;
+  position: center;
+
+}
+
+.chat-window .chat-header {
+  height: 20px;
+  border-radius: 0;
+  background: #5c5c5c;
+  position: justify;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.chat-window .chat-header p {
+  display: block;
+  padding: 0 1em;
+  color: #fff;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.chat-window .chat-body {
+  height: 280px;
+  
+}
+
+.chat-window .message-container {
+  width: 100%;
+  height: 100%;
+}
+
+.chat-window .message {
+  height: auto;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.chat-window .message .message-content {
+  width: auto;
+  height: auto;
+  min-height: 20px;
+  max-width: 400px;
+  background-color: #3a3a3a;
+  border-radius: 5px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+#you {
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+#you .message-content {
+  justify-content: flex-end;
+  /* background-color: #00ff00; */
+  color: #e20c0c;
+  margin-left: auto;
+}
+
+#you .message-meta {
+  justify-content: flex-end;
+  margin-right: 5px;
+}
+
+#other {
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+#other .message-content {
+  justify-content: flex-start;
+  background-color: #999;
+  margin-right: auto;
+}
+
+#other .message-meta {
+  justify-content: flex-start;
+  margin-left: 5px;
+}
+
+#other .message-meta {
+  justify-content: flex-end;
+  margin-right: 5px;
+}
+
+.message-meta #author {
+  margin-left: 10px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.chat-window .chat-body .message .message-meta {
+  display: flex;
+  font-size: 12px;
+}
+
+.chat-window .chat-footer {
+  height: 22px;
+  border: 1px solid #263238;
+  border-top: none;
+  display: flex;
+}
+
+.chat-window .chat-footer input {
+  height: 100%;
+  flex: 85%;
+  border: 0;
+  padding: 0 0.7em;
+  font-size: 1em;
+  border-right: 1px dotted #607d8b;
+  position: fixed;
+
+  outline: none;
+  font-family: monospace;
+  bottom: 0%;
+}
+
+/* other CSS code */
+
+.chat-window .chat-footer button {
+  border: 0;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  flex: 15%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  font-size: 25px;
+  color: lightgray;
+  position:relative;
+}
+
+
+.chat-window .chat-footer button:hover {
+  color: #eb2a10;
+}
+.hide {
+  opacity: 0 !important;
+}
+
+#center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.chat-window {
+  position: relative;
+}
+
+.chat-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.chat-window .chat-footer input {
+  height: 100%;
+  flex: 85%;
+  border: 0;
+  padding: 0 0.7em;
+  font-size: 1em;
+  border-right: 1px dotted #607d8b;
+  outline: blanchedalmond;
+  font-family: monospace;
+  position: relative;
+  bottom: 0;
+  overflow-x: hidden;
+}
+#mess{
+  color: #00ff00;
+}
