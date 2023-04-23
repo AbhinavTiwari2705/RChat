@@ -1,7 +1,7 @@
 import "./App.css";
 import io from "socket.io-client";
 import { useState } from "react";
-import Chat from "./Chat";
+import TerminalJunction from "./TerminalJunction";
 
 const socket = io.connect("http://localhost:3001");
 
@@ -19,28 +19,31 @@ function App() {
 
   return (
     <div className="App">
-      {!showChat ? (
-        <div className="joinChatContainer">
-          <h3>Join A Chat</h3>
-          <input
-            type="text"
-            placeholder="Name..."
-            onChange={(event) => {
-              setUsername(event.target.value);
-            }}
-          />
-          <input
-            type="text"
-            placeholder="Room ID..."
-            onChange={(event) => {
-              setRoom(event.target.value);
-            }}
-          />
-          <button onClick={joinRoom}>Join A Room</button>
-        </div>
-      ) : (
-        <Chat socket={socket} username={username} room={room} />
-      )}
+      <div className="TerminalBlock">
+        {!showChat ? (
+          <div className="joinChatContainer">
+            <h3>Join A Chat</h3>
+            <input
+              type="text"
+              placeholder="Name..."
+              onChange={(event) => {
+                setUsername(event.target.value);
+              }}
+            />
+            <input
+              type="text"
+              placeholder="Room ID..."
+              onChange={(event) => {
+                setRoom(event.target.value);
+              }}
+            />
+            <button onClick={joinRoom}>Join A Room</button>
+          </div>
+        ) : (
+          // <Chat socket={socket} username={username} room={room} />
+          <TerminalJunction socket={socket} username={username} room={room} />
+        )}
+      </div>
     </div>
   );
 }
