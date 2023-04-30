@@ -60,7 +60,5 @@ Contributions are always welcome!
 If you'd like to contribute to this project, please fork the repository and create a pull request with your changes.
 
 
-## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
 
